@@ -18,5 +18,7 @@
     "postcss": "^8.3.11",
     "vue-loader": "^16.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@webzlodimir/vue-avatar": "^0.0.8"
+  }
 }
