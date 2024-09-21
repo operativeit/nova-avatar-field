@@ -1,6 +1,7 @@
 <template>
+  {{color}}
   <avatar
-    :name="fieldValue" 
+    :name="fieldValue"
     size="sm"
   />
 </template>
@@ -17,6 +18,12 @@ export default {
     fieldValue() {
       return this.field.displayedAs || this.field.value
     },
+    color() {
+      return '';
+    }
+  },
+  mounted() {
+    console.log('nova-avatar-field@mounted', new TailwindColor.pick() );
   },
   data() {
     return {
