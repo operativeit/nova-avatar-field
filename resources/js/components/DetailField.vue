@@ -1,14 +1,23 @@
 <template>
-  <vue-avatar :username="fieldValue" />
+  <PanelItem :index="index" :field="field">
+    <template #value>
+      <avatar
+        :name="fieldValue"
+        color="yellow"
+        :src="imageSrc"
+        size="sm"
+      />
+    </template>
+  </PanelItem>
 </template>
 
 <script>
-import VueAvatar from "@webzlodimir/vue-avatar";
+import Avatar from "./Avatar.vue";
 
 export default {
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   components: {
-    VueAvatar
+    Avatar
   },
   computed: {
     fieldValue() {

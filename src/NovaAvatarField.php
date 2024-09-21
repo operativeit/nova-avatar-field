@@ -12,4 +12,5 @@ class NovaAvatarField extends Field
      * @var string
      */
     public $component = 'nova-avatar-field';
+
 }

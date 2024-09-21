@@ -1,19 +1,26 @@
 <template>
-  <vue-avatar :username="fieldValue" />
+  <avatar
+    :name="fieldValue" 
+    size="sm"
+  />
 </template>
 
 <script>
-import VueAvatar from "@webzlodimir/vue-avatar";
+import Avatar from "./Avatar.vue"
 
 export default {
   props: ['resourceName', 'field'],
   components: {
-    VueAvatar
+    Avatar
   },
   computed: {
     fieldValue() {
       return this.field.displayedAs || this.field.value
     },
+  },
+  data() {
+    return {
+    }
   }
 }
 </script>
