@@ -23,7 +23,6 @@ export default {
     }
   },
   mounted() {
-    console.log('nova-avatar-field@mounted', new TailwindColor.pick() );
   },
   data() {
     return {
